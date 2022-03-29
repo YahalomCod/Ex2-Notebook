@@ -5,7 +5,8 @@ using namespace std;
 #include <vector>
 #pragma once
 namespace ariel{
-   class Page{
+    /*This class represents a page inside the notebook builds from 2D char dynaminc vector*/
+    class Page{
         public:
             vector<vector<char>> *rows ;
             Page(){
@@ -19,7 +20,6 @@ namespace ariel{
             void write( int row,  int culomn, Direction d, string const& data)const;
             string read ( int row,  int culomn, Direction d,  int length)const;
             void erase( int row,  int culomn, Direction d,  int length)const;
-            void show()const;
     };
     
 }

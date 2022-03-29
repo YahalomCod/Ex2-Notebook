@@ -7,6 +7,10 @@ using namespace ariel;
 #include <string>
 const unsigned int limit = 100;
 
+/*
+This function erase the in a certain location in the notebook according to the input
+if the rows are not created it create and erase in that location
+*/
 void Page::erase(int row, int culomn, Direction d, int length)const{
     unsigned int unrow = static_cast<unsigned int>(row);
     unsigned int uncul = static_cast<unsigned int>(culomn);
@@ -42,6 +46,10 @@ void Page::erase(int row, int culomn, Direction d, int length)const{
     }
 }
 
+/*
+This function write the in a certain location in the notebook according to the input
+if the rows are not created it create and write in that location
+*/
 void Page::write( int row, int culomn, Direction d, string const& data)const{
     unsigned int unrow = static_cast<unsigned int>(row);
     unsigned int uncul = static_cast<unsigned int>(culomn);
@@ -87,6 +95,10 @@ void Page::write( int row, int culomn, Direction d, string const& data)const{
     }
 }
 
+/*
+This function reads the in a certain location in the notebook according to the input
+if the rows are not created it create and reads in that location
+*/
 string Page::read ( int row, int culomn, Direction d, int length)const{
     string ans;
     unsigned int unrow = static_cast<unsigned int>(row);

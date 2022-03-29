@@ -6,11 +6,10 @@ using namespace std;
 #include "Page.hpp"
 #pragma once
 namespace ariel{
+    /*This Class represents a Notebook build represented a dynamic vector of pages*/
     class Notebook{
     public:
-        int numberOfPages;
         vector<Page> pages ;
-
         Notebook(){
             ariel::Page *pag = new ariel::Page();
             pages.push_back(*pag);
